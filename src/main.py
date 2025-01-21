@@ -1,5 +1,6 @@
 import re
 
+
 def clear_names(file_name: str) -> list:
     """ Принимает имя файла и возвращает список имен, содержащихся в файле"""
     new_names_list = list()
@@ -28,6 +29,7 @@ def filter_russian_names(names_list: list) -> list:
             new_names_list.append(name_item)
     return new_names_list
 
+
 def filter_english_names(names_list: list) -> list:
     """ Фильтрация английских имен"""
     new_names_list = list()
@@ -39,7 +41,7 @@ def filter_english_names(names_list: list) -> list:
 
 def save_to_file(file_name: str, data: str) -> None:
     """ Сохраняет данные в файл"""
-    with open('../data/' + file_name,'w') as names_file:
+    with open('../data/' + file_name, 'w') as names_file:
         names_file.write(data)
 
 

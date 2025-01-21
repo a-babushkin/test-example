@@ -29,7 +29,7 @@ def filter_english_names(names_list: list) -> list:
         if not is_russian_name(name_item):
             new_names_list.append(name_item)
     return new_names_list
-def save_to_file(file_name: str, data: str) -> None:
+def save_to_file(file_name: str, data: str)->None:
     """ Сохраняет данные в файл"""
     with open('../data/' + file_name, 'w') as names_file:
         names_file.write(data)
